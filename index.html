@@ -244,7 +244,10 @@ font-size: 18px;
 
 @media only screen and ( max-width:1000px ) {
 
-
+#canvas{
+	 width: 400px;
+	height:370px;
+}
 .enabled[vw] [vw-access-button] {
     display: none;
     width: 120px;
@@ -953,6 +956,17 @@ font-size: 12px;
 		<div vw-access-button class="active"></div>
 		<div vw-plugin-wrapper>
 		  <div class="vw-plugin-top-wrapper"></div>
+			<div id="gameContainer" class="emscripten" style="padding: 0px;margin: 0px;border: 0px;background: rgb(255, 255, 255);">
+				<canvas id="#canvas" height="370" style="cursor: default;" width="400">	
+					</canvas>
+				<div style="position: absolute; left: 40%; top: 50%; transform: translate(-50%, -50%); background: url(" data:image="">					
+					</div>
+				<div style="position: absolute; left: 40%; top: 50%; transform: translate(-50%, -50%); height: 18px; width: 141px; margin-top: 90px; display: none;">
+					<div style="background: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAI0AAAASCAYAAABmbl0zAAAACXBIWXMAAAsSAAALEgHS3X78AAAAUUlEQVRo3u3aMQ4AEAxAUcRJzGb3v1mt3cQglvcmc/NTA3XMFQUuNCPgVk/nahwchE2D6wnRIBpEg2hANIgG0SAaRAOiQTR8lV+5/avBpuGNDcz6A6oq1CgNAAAAAElFTkSuQmCC&quot;) right center / cover no-repeat; float: right; width: 0%; height: 100%; display: inline-block;"></div>
+						<div style="background: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAI0AAAASCAYAAABmbl0zAAAACXBIWXMAAAsSAAALEgHS3X78AAAAQElEQVRo3u3SMREAMAgAsVIpnTvj3xlogDmR8PfxftaBgSsBpsE0mAbTYBowDabBNJgG04BpMA2mwTSYBkzDXgP/hgGnr4PpeAAAAABJRU5ErkJggg==&quot;) left center / cover no-repeat; float: left; width: 100%; height: 100%; display: inline-block;">			
+					</div>
+				</div>
+			</div>
 		</div>
 	  </div>
 	  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
